@@ -69,6 +69,9 @@ main.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
 main.Position = UDim2.new(0.342424303, 0, 0.339246154, 0)
 main.Size = UDim2.new(0, 584, 0, 289)
 
+UICorner.CornerRadius = UDim.new(0.174999997, 0)
+UICorner.Parent = main
+
 label.Name = "label"
 label.Parent = main
 label.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
