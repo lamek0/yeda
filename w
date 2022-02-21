@@ -138,7 +138,7 @@ fly.MouseButton1Down:connect(function()
 			localplayer.Character.Humanoid.PlatformStand=true
 			local new=gyro.cframe - gyro.cframe.p + pos.position
 			if not keys.w and not keys.s and not keys.a and not keys.d then
-				speed=40
+				speed=26
 			end
 			if keys.w then
 				new = new + workspace.CurrentCamera.CoordinateFrame.lookVector * speed
@@ -157,7 +157,7 @@ fly.MouseButton1Down:connect(function()
 				speed=speed+0
 			end
 			if speed>10 then
-				speed=40
+				speed=26
 			end
 			pos.position=new.p
 			if keys.w then
