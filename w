@@ -1,5 +1,21 @@
--- Gui to Lua
--- Version: 3.2
+pcall(function()
+  game.StarterGui:SetCore("SendNotification", {
+    Title = 'fuck da hood';
+    Text = 'Credits to suspats and jiafeigame.';
+    Duration = 20;
+  })
+  if not game.Players.LocalPlayer:IsInGroup(10485902) then
+    coroutine.resume(coroutine.create(function()
+       wait(10)
+       game.StarterGui:SetCore("SendNotification", {
+        Title = 'you are NOT in the group';
+        Text = 'the script will still work but our group link was copied to your clipboard thx';
+        Duration = 10;
+       })
+       setclipboard('https://www.roblox.com/groups/10485902/t-h-e-u-n-k-n-o-w-n-m-a-t-t-e-r#!/about')
+    end))
+  end
+end)
 
 -- Instances:
 
