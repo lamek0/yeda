@@ -244,6 +244,44 @@ reach.Font = Enum.Font.Fantasy
 reach.Text = "Reach"
 reach.TextColor3 = Color3.fromRGB(0, 0, 0)
 reach.TextSize = 14.000
+reach.MouseButton1Down:connect(function()
+wait(0) local A_1 = "[Legacy Trash] Melee Reach Enabled" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+	LP = game.Players.LocalPlayer
+	for i,v in ipairs(LP.Character:GetDescendants()) do
+		if v:IsA("MeshPart") then v.Massless = true
+			v.CanCollide = false
+			v.CustomPhysicalProperties = PhysicalProperties.new(0, 0, 0, 0, 0)
+
+		end
+	end
+
+	for i,v in ipairs(game.workspace:GetDescendants()) do
+		if v:IsA("Seat") then 
+			v.Disabled = true
+		end
+	end
+	x = 35
+	y = 35
+	z = 35
+
+
+	penis = Vector3.new(x,y,z)
+
+	LP.Character.RightHand.Size = penis
+
+	LP.Character.RightHand.Transparency = 1
+	local selectionBox = Instance.new("SelectionBox",LP.Character.RightHand)
+	selectionBox.Adornee = LP.Character.RightHand
+	selectionBox.Color3 = Color3.new(1,0,0)
+
+	LP.Character.LeftHand.Size = penis
+	LP.Character.BodyEffects.SpecialParts.LeftHand.Size = penis
+
+	LP.Character.LeftHand.Transparency = 1
+	local selectionBox = Instance.new("SelectionBox",LP.Character.LeftHand)
+	selectionBox.Adornee = LP.Character.LeftHand
+	selectionBox.Color3 = Color3.new(1,0,0)		
+end)
 
 UICorner_6.CornerRadius = UDim.new(0.100000001, 0)
 UICorner_6.Parent = reach
