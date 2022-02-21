@@ -241,7 +241,7 @@ unban.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
 unban.Position = UDim2.new(0.200342476, 0, 0.207612395, 0)
 unban.Size = UDim2.new(0, 79, 0, 37)
 unban.Font = Enum.Font.Fantasy
-unban.Text = "Anti Bag"
+unban.Text = "Unban"
 unban.TextColor3 = Color3.fromRGB(0, 0, 0)
 unban.TextSize = 14.000
 unban.MouseButton1Down:connect(function()
