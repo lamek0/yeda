@@ -57,7 +57,6 @@ local yedacommands = Instance.new("TextButton")
 local UICorner_17 = Instance.new("UICorner")
 local more = Instance.new("TextButton")
 local UICorner_18 = Instance.new("UICorner")
-local UICorner_19 = Instance.new("UICorner")
 
 --Properties:
 
@@ -69,8 +68,7 @@ main.Parent = ScreenGui
 main.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
 main.Position = UDim2.new(0.342424303, 0, 0.339246154, 0)
 main.Size = UDim2.new(0, 584, 0, 289)
-local Plr = game.Players.LocalPlayer
-    
+
 label.Name = "label"
 label.Parent = main
 label.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
@@ -138,7 +136,7 @@ fly.MouseButton1Down:connect(function()
 			localplayer.Character.Humanoid.PlatformStand=true
 			local new=gyro.cframe - gyro.cframe.p + pos.position
 			if not keys.w and not keys.s and not keys.a and not keys.d then
-				speed=26
+				speed=40
 			end
 			if keys.w then
 				new = new + workspace.CurrentCamera.CoordinateFrame.lookVector * speed
@@ -157,7 +155,7 @@ fly.MouseButton1Down:connect(function()
 				speed=speed+0
 			end
 			if speed>10 then
-				speed=26
+				speed=40
 			end
 			pos.position=new.p
 			if keys.w then
@@ -204,7 +202,7 @@ fly.MouseButton1Down:connect(function()
 			keys.d=false
 		end
 	end)
-	start() 																		
+	start()
 end)
 
 UICorner_2.CornerRadius = UDim.new(0.100000001, 0)
@@ -219,6 +217,13 @@ speed.Font = Enum.Font.Fantasy
 speed.Text = "Speed"
 speed.TextColor3 = Color3.fromRGB(0, 0, 0)
 speed.TextSize = 14.000
+speed.MouseButton1Down:connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = 'Message';
+		Text = 'Sorry the this script doesnt work right now';
+		Duration = 10;
+	})
+end)
 
 UICorner_3.CornerRadius = UDim.new(0.100000001, 0)
 UICorner_3.Parent = speed
@@ -232,6 +237,13 @@ Premiumcmds.Font = Enum.Font.Fantasy
 Premiumcmds.Text = "No Slow"
 Premiumcmds.TextColor3 = Color3.fromRGB(0, 0, 0)
 Premiumcmds.TextSize = 14.000
+Premiumcmds.MouseButton1Down:connect(function()
+game.StarterGui:SetCore("SendNotification", {
+	Title = 'Message';
+	Text = 'Sorry the this script doesnt work right now';
+	Duration = 10;
+})
+end)
 
 UICorner_4.CornerRadius = UDim.new(0.100000001, 0)
 UICorner_4.Parent = Premiumcmds
@@ -248,7 +260,7 @@ unban.TextSize = 14.000
 unban.MouseButton1Down:connect(function()
 	game.StarterGui:SetCore("SendNotification", {
 		Title = 'Message';
-		Text = 'Sorry the unban script doesnt work right now';
+		Text = 'Sorry the this script doesnt work right now';
 		Duration = 10;
 	})
 end)
@@ -318,6 +330,13 @@ premiumcommands.TextColor3 = Color3.fromRGB(0, 0, 0)
 premiumcommands.TextScaled = true
 premiumcommands.TextSize = 14.000
 premiumcommands.TextWrapped = true
+premiumcommands.MouseButton1Down:connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = 'Message';
+		Text = 'Sorry the this script doesnt work right now';
+		Duration = 10;
+	})
+end)
 
 UICorner_7.CornerRadius = UDim.new(0.100000001, 0)
 UICorner_7.Parent = premiumcommands
@@ -331,6 +350,13 @@ antiarrest.Font = Enum.Font.Fantasy
 antiarrest.Text = "Anti Arrest"
 antiarrest.TextColor3 = Color3.fromRGB(0, 0, 0)
 antiarrest.TextSize = 14.000
+antiarrest.MouseButton1Down:connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = 'Message';
+		Text = 'Sorry the this script doesnt work right now';
+		Duration = 10;
+	})
+end)
 
 UICorner_8.CornerRadius = UDim.new(0.100000001, 0)
 UICorner_8.Parent = antiarrest
@@ -361,6 +387,13 @@ invisiblemask.Font = Enum.Font.Fantasy
 invisiblemask.Text = "Invisble mask"
 invisiblemask.TextColor3 = Color3.fromRGB(0, 0, 0)
 invisiblemask.TextSize = 14.000
+invisiblemask.MouseButton1Down:connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = 'Message';
+		Text = 'Sorry the this script doesnt work right now';
+		Duration = 10;
+	})
+end)
 
 UICorner_10.CornerRadius = UDim.new(0.100000001, 0)
 UICorner_10.Parent = invisiblemask
@@ -374,6 +407,13 @@ freefist.Font = Enum.Font.Fantasy
 freefist.Text = "FreeFist (P)"
 freefist.TextColor3 = Color3.fromRGB(0, 0, 0)
 freefist.TextSize = 14.000
+freefist.MouseButton1Down:connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = 'Message';
+		Text = 'Sorry the this script doesnt work right now';
+		Duration = 10;
+	})
+end)
 
 UICorner_11.CornerRadius = UDim.new(0.100000001, 0)
 UICorner_11.Parent = freefist
@@ -387,6 +427,13 @@ god.Font = Enum.Font.Fantasy
 god.Text = "God"
 god.TextColor3 = Color3.fromRGB(0, 0, 0)
 god.TextSize = 14.000
+god.MouseButton1Down:connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = 'Message';
+		Text = 'Sorry the this script doesnt work right now';
+		Duration = 10;
+	})
+end)
 
 UICorner_12.CornerRadius = UDim.new(0.100000001, 0)
 UICorner_12.Parent = god
@@ -400,6 +447,9 @@ infzoom.Font = Enum.Font.Fantasy
 infzoom.Text = "Inf zoom"
 infzoom.TextColor3 = Color3.fromRGB(0, 0, 0)
 infzoom.TextSize = 14.000
+infzoom.MouseButton1Down:Connect(function()
+	game:GetService("Players").LocalPlayer.CameraMaxZoomDistance = math.huge
+end)
 
 UICorner_13.CornerRadius = UDim.new(0.100000001, 0)
 UICorner_13.Parent = infzoom
@@ -413,6 +463,13 @@ targetscript.Font = Enum.Font.Fantasy
 targetscript.Text = "Target script"
 targetscript.TextColor3 = Color3.fromRGB(0, 0, 0)
 targetscript.TextSize = 14.000
+targetscript.MouseButton1Down:connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = 'Message';
+		Text = 'Sorry the this script doesnt work right now';
+		Duration = 10;
+	})
+end)
 
 UICorner_14.CornerRadius = UDim.new(0.100000001, 0)
 UICorner_14.Parent = targetscript
@@ -426,6 +483,13 @@ noclip.Font = Enum.Font.Fantasy
 noclip.Text = "Noclip (K)"
 noclip.TextColor3 = Color3.fromRGB(0, 0, 0)
 noclip.TextSize = 14.000
+noclip.MouseButton1Down:connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = 'Message';
+		Text = 'Sorry the this script doesnt work right now';
+		Duration = 10;
+	})
+end)
 
 UICorner_15.CornerRadius = UDim.new(0.100000001, 0)
 UICorner_15.Parent = noclip
@@ -439,6 +503,13 @@ teleport.Font = Enum.Font.Fantasy
 teleport.Text = "Teleport (Q)"
 teleport.TextColor3 = Color3.fromRGB(0, 0, 0)
 teleport.TextSize = 14.000
+teleport.MouseButton1Down:connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = 'Message';
+		Text = 'Sorry the this script doesnt work right now';
+		Duration = 10;
+	})
+end)
 
 UICorner_16.CornerRadius = UDim.new(0.100000001, 0)
 UICorner_16.Parent = teleport
@@ -454,6 +525,13 @@ yedacommands.TextColor3 = Color3.fromRGB(0, 0, 0)
 yedacommands.TextScaled = true
 yedacommands.TextSize = 14.000
 yedacommands.TextWrapped = true
+yedacommands.MouseButton1Down:connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = 'Message';
+		Text = 'Sorry the this script doesnt work right now';
+		Duration = 10;
+	})
+end)
 
 UICorner_17.CornerRadius = UDim.new(0.100000001, 0)
 UICorner_17.Parent = yedacommands
@@ -467,16 +545,20 @@ more.Font = Enum.Font.Fantasy
 more.Text = "More"
 more.TextColor3 = Color3.fromRGB(0, 0, 0)
 more.TextSize = 14.000
+more.MouseButton1Down:connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = 'Message';
+		Text = 'Sorry the this script doesnt work right now';
+		Duration = 10;
+	})
+end)
 
 UICorner_18.CornerRadius = UDim.new(0.100000001, 0)
 UICorner_18.Parent = more
 
-UICorner_19.CornerRadius = UDim.new(0.075000003, 0)
-UICorner_19.Parent = main
-
 -- Scripts:
 
-local function HLUKCZ_fake_script() -- main.Local Script 
+local function CWEX_fake_script() -- main.Local Script 
 	local script = Instance.new('LocalScript', main)
 
 	local UIS = game:GetService('UserInputService')
@@ -485,14 +567,14 @@ local function HLUKCZ_fake_script() -- main.Local Script
 	local dragSpeed = 0.25
 	local dragStart = nil
 	local startPos = nil
-
+	
 	local function updateInput(input)
 		local delta = input.Position - dragStart
 		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
 			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
 		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
 	end
-
+	
 	frame.InputBegan:Connect(function(input)
 		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
 			dragToggle = true
@@ -505,7 +587,7 @@ local function HLUKCZ_fake_script() -- main.Local Script
 			end)
 		end
 	end)
-
+	
 	UIS.InputChanged:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 			if dragToggle then
@@ -514,4 +596,24 @@ local function HLUKCZ_fake_script() -- main.Local Script
 		end
 	end)
 end
-coroutine.wrap(HLUKCZ_fake_script)()
+coroutine.wrap(CWEX_fake_script)()
+local function FXYYBME_fake_script() -- main.LocalScript 
+	local script = Instance.new('LocalScript', main)
+
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "v" then
+			script.Parent.Visible = true
+		end
+	end)
+	
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "v" then
+			script.Parent.Visible = false
+		end
+	end)
+end
+coroutine.wrap(FXYYBME_fake_script)()
