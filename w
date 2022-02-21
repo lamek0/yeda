@@ -78,7 +78,7 @@ fly.Text = "Fly"
 fly.TextColor3 = Color3.fromRGB(0, 0, 0)
 fly.TextSize = 14.000
 fly.MouseButton1Down:connect(function()
-	wait(0) local A_1 = " " local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
+	wait(0) local A_1 = "" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
 	local plr = game.Players.LocalPlayer
 	local mouse = plr:GetMouse()
 
