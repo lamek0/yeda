@@ -244,8 +244,12 @@ unban.Font = Enum.Font.Fantasy
 unban.Text = "Anti Bag"
 unban.TextColor3 = Color3.fromRGB(0, 0, 0)
 unban.TextSize = 14.000
-unban.MouseButton1Down:Connect(function()
-	 loadstring(game:GetObjects("rbxassetid://5812737894")[1].Source)()
+unban.MouseButton1Down:connect(function()
+  game.StarterGui:SetCore("SendNotification", {
+    Title = 'fuck da hood';
+    Text = 'Credits to suspats and jiafeigame.';
+    Duration = 20;
+  })
 end)
 
 UICorner_5.CornerRadius = UDim.new(0.100000001, 0)
