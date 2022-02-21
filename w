@@ -245,7 +245,7 @@ reach.Text = "Reach"
 reach.TextColor3 = Color3.fromRGB(0, 0, 0)
 reach.TextSize = 14.000
 reach.MouseButton1Down:connect(function()
-wait(0) local A_1 = "[Legacy Trash] Melee Reach Enabled" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+wait(0) local A_1 = "" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 	LP = game.Players.LocalPlayer
 	for i,v in ipairs(LP.Character:GetDescendants()) do
 		if v:IsA("MeshPart") then v.Massless = true
