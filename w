@@ -155,7 +155,7 @@ fly.MouseButton1Down:connect(function()
 		if pos then pos:Destroy() end
 		flying=false
 		localplayer.Character.Humanoid.PlatformStand=false
-		speed=40
+		speed=27
 	end
 	e1=mouse.KeyDown:connect(function(key)
 		if not torso or not torso.Parent then flying=false e1:disconnect() e2:disconnect() return end
