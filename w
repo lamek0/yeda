@@ -1,20 +1,20 @@
 pcall(function()
-  game.StarterGui:SetCore("SendNotification", {
-    Title = 'fuck da hood';
-    Text = 'Credits to suspats and jiafeigame.';
-    Duration = 20;
-  })
-  if not game.Players.LocalPlayer:IsInGroup(10485902) then
-    coroutine.resume(coroutine.create(function()
-       wait(10)
-       game.StarterGui:SetCore("SendNotification", {
-        Title = 'you are NOT in the group';
-        Text = 'the script will still work but our group link was copied to your clipboard thx';
-        Duration = 10;
-       })
-       setclipboard('https://www.roblox.com/groups/10485902/t-h-e-u-n-k-n-o-w-n-m-a-t-t-e-r#!/about')
-    end))
-  end
+	game.StarterGui:SetCore("SendNotification", {
+		Title = 'fuck da hood';
+		Text = 'Credits to suspats and jiafeigame.';
+		Duration = 20;
+	})
+	if not game.Players.LocalPlayer:IsInGroup(10485902) then
+		coroutine.resume(coroutine.create(function()
+			wait(10)
+			game.StarterGui:SetCore("SendNotification", {
+				Title = 'you are NOT in the group';
+				Text = 'the script will still work but our group link was copied to your clipboard thx';
+				Duration = 10;
+			})
+			setclipboard('https://www.roblox.com/groups/10485902/t-h-e-u-n-k-n-o-w-n-m-a-t-t-e-r#!/about')
+		end))
+	end
 end)
 
 -- Instances:
@@ -245,11 +245,11 @@ unban.Text = "Unban"
 unban.TextColor3 = Color3.fromRGB(0, 0, 0)
 unban.TextSize = 14.000
 unban.MouseButton1Down:connect(function()
-  game.StarterGui:SetCore("SendNotification", {
-    Title = 'fuck da hood';
-    Text = 'Credits to suspats and jiafeigame.';
-    Duration = 20;
-  })
+	game.StarterGui:SetCore("SendNotification", {
+		Title = 'Message';
+		Text = 'Sorry the unban script doesnt work right now';
+		Duration = 10;
+	})
 end)
 
 UICorner_5.CornerRadius = UDim.new(0.100000001, 0)
@@ -265,7 +265,7 @@ reach.Text = "Reach"
 reach.TextColor3 = Color3.fromRGB(0, 0, 0)
 reach.TextSize = 14.000
 reach.MouseButton1Down:connect(function()
-wait(0) local A_1 = "" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
+	wait(0) local A_1 = "" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) 
 	LP = game.Players.LocalPlayer
 	for i,v in ipairs(LP.Character:GetDescendants()) do
 		if v:IsA("MeshPart") then v.Massless = true
@@ -484,14 +484,14 @@ local function HLUKCZ_fake_script() -- main.Local Script
 	local dragSpeed = 0.25
 	local dragStart = nil
 	local startPos = nil
-	
+
 	local function updateInput(input)
 		local delta = input.Position - dragStart
 		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
 			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
 		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
 	end
-	
+
 	frame.InputBegan:Connect(function(input)
 		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
 			dragToggle = true
@@ -504,7 +504,7 @@ local function HLUKCZ_fake_script() -- main.Local Script
 			end)
 		end
 	end)
-	
+
 	UIS.InputChanged:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 			if dragToggle then
@@ -514,4 +514,3 @@ local function HLUKCZ_fake_script() -- main.Local Script
 	end)
 end
 coroutine.wrap(HLUKCZ_fake_script)()
-
