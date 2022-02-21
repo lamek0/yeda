@@ -221,11 +221,8 @@ speed.Text = "Speed"
 speed.TextColor3 = Color3.fromRGB(0, 0, 0)
 speed.TextSize = 14.000
 speed.MouseButton1Down:connect(function()
-	game.StarterGui:SetCore("SendNotification", {
-		Title = 'Message';
-		Text = 'Sorry the this script doesnt work right now';
-		Duration = 10;
-	})
+ game.Players.LocalPlayer.Character.Humanoid.Name = "BuyLinoriaNow"
+    game.Players.LocalPlayer.Character.BuyLinoriaNow.WalkSpeed = 200
 end)
 
 UICorner_3.CornerRadius = UDim.new(0.100000001, 0)
